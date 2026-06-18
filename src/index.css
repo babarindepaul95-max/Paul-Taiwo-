@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00113a;
+  --color-secondary: #5d5f5f;
+  --color-tertiary: #735c00;
+  --color-tertiary-container: #cca830;
+  --color-background: #faf8ff;
+  --color-on-background: #1a1b20;
+  --color-surface: #faf8ff;
+  --color-surface-container: #efedf3;
+  --color-surface-container-low: #f4f3f9;
+  --color-outline-variant: #c5c6d2;
+  --color-on-surface-variant: #444650;
+  --color-on-primary: #ffffff;
+  --color-on-tertiary: #ffffff;
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .circuit-bg {
+    background-image: radial-gradient(circle at 2px 2px, rgba(0, 17, 58, 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+}
+
