@@ -140,7 +140,7 @@ A common developer anti-pattern is 'Tech-Larping' or 'AI-Slop'—decorating an i
 When designing screens for Apostle Paul Academy, we use a distinct visual palette: deep primary blues (#00113a) to communicate security and prestige, contrasted with rich golden accents (#cca830) indicating elite quality. We pair "Montserrat" for display headers—giving authority to the course titles—with "Inter" for readable bodies. 
 
 By utilizing Tailwind's flexible padding, custom touch target scopes of 44px, and smooth CSS keyframe entries, we create a calm digital environment where complex coding paradigms feel approachable. True craftsmanship respects user intent above all else.`,
-    author: "Elena Vasquez",
+    author: "Chioma Adebayo",
     role: "Lead Designer in Residence",
     date: "June 10, 2026",
     tag: "UI/UX & Design",
@@ -157,7 +157,7 @@ If you are using LLM engines, search groundings, or third-party payment systems 
 The solution is a strict full-stack architecture. In this project, we utilize an Express server to proxy all AI inquiries. The client never loads '@google/genai' or has access to 'process.env.GEMINI_API_KEY'. Instead, it hits our endpoint /api/ai/chat or /api/ai/roadmap with standard fetch streams, and our server securely queries the Gemini API.
 
 Additionally, to ensure resilience, we employ lazy initialization. If the key is omitted, the server boots up seamlessly and will only reject routes calling the API with clear errors, avoiding catastrophic dev crashes. This is how enterprise-grade scalable platforms are structured.`,
-    author: "Dr. Marcus Thorne",
+    author: "Dr. Kwame Boateng",
     role: "Director of Software Engineering",
     date: "May 28, 2026",
     tag: "Full-Stack Security",
@@ -169,7 +169,7 @@ export const STUDENT_PROJECTS: StudentProject[] = [
   {
     id: "proj-1",
     title: "NeuralTrade Predictive Core",
-    student: "Alexander K.",
+    student: "Alaba K.",
     description: "An advanced machine-learning database analyzer tracking high-frequency trading indices, visualizing real-time metrics with custom Recharts.",
     category: "AI & Finance",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1200"
@@ -177,7 +177,7 @@ export const STUDENT_PROJECTS: StudentProject[] = [
   {
     id: "proj-2",
     title: "ScribeFlow - AI Co-Authoring Canvas",
-    student: "Sarah M.",
+    student: "Amara M.",
     description: "A gorgeous collaborative content editor powered by server-side Gemini, enabling context-sensitive sentence expansion and design presets.",
     category: "Full-Stack ICT",
     image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200"
@@ -197,18 +197,18 @@ export const TESTIMONIALS = [
     quote: "Apostle Paul Academy completely transformed my technical understanding. I went from zero programming knowledge to designing custom AI-driven software pipelines. The mentors are top-tier industry veterans who guide you through genuine project metrics.",
     name: "Sandra Agboola",
     role: "Senior Full-Stack Engineer at Google Cloud",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150"
+    avatar: "/src/assets/images/sandra_agboo_1782151528874.jpg"
   },
   {
     quote: "The interactive AI Center at Apostle Paul Academy acts like a highly patient, elite level software engineering lead. It guided me through custom roadmap generations tailormade for my design goal in Figma and React core. Simply brilliant educational design.",
-    name: "Hiroshi Sato",
-    role: "AI Developer at Siemens Healthcare",
-    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150"
+    name: "Farai Ndlovu",
+    role: "AI Developer at Siemens Healthcare South Africa",
+    avatar: "/src/assets/images/farai_ndlovu_1782151497532.jpg"
   },
   {
     quote: "Unlike other bootcamps focusing on mock projects, Apostle Paul Academy teaches you full-stack security, lazy server-side SDK configs, and database optimizations. Securing enterprise software has become second nature to me.",
-    name: "Michael Chen",
-    role: "Chief Technical Architect at Apex Systems",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150"
+    name: "Babajide Benson",
+    role: "Chief Technical Architect at MTN Group Lagos",
+    avatar: "/src/assets/images/babajide_ben_1782151512413.jpg"
   }
 ];

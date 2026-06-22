@@ -7,9 +7,12 @@ import CoursesSection from "./components/CoursesSection";
 import AICenterSection from "./components/AICenterSection";
 import PortfolioSection from "./components/PortfolioSection";
 import BlogSection from "./components/BlogSection";
+import ServicesSection from "./components/ServicesSection";
+import CareerSection from "./components/CareerSection";
 import { CartModal, AdmissionsPortalModal, CourseDetailModal } from "./components/Modals";
 import { Course } from "./types";
 import { COURSES } from "./data";
+import VoiceAgent from "./components/VoiceAgent";
 
 export default function App() {
   // Navigation tabs state
@@ -114,6 +117,10 @@ export default function App() {
 
         {currentTab === "portfolio" && <PortfolioSection />}
 
+        {currentTab === "services" && <ServicesSection />}
+
+        {currentTab === "career" && <CareerSection />}
+
         {currentTab === "blog" && <BlogSection />}
       </main>
 
@@ -150,6 +157,17 @@ export default function App() {
         onAddToCart={handleAddToCart}
         cart={cart}
         enrolledCourses={enrolledCourseIds}
+      />
+
+      {/* Dynamic Voice Agent */}
+      <VoiceAgent 
+        onNavigateTab={(tab) => setCurrentTab(tab)}
+        onOpenBooking={() => {
+          setCurrentTab("home");
+          setTimeout(() => {
+            document.getElementById("room-booking-engine")?.scrollIntoView({ behavior: "smooth" });
+          }, 150);
+        }}
       />
 
     </div>

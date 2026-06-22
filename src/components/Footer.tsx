@@ -1,5 +1,5 @@
 import React from "react";
-import { Terminal, Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Terminal, Mail, Phone, MapPin, MessageSquare, Facebook, Instagram, Send, Music } from "lucide-react";
 
 interface FooterProps {
   setCurrentTab: (tab: string) => void;
@@ -29,15 +29,51 @@ export default function Footer({ setCurrentTab, onOpenEnrollModal }: FooterProps
           <p className="font-body text-xs sm:text-sm text-gray-400 leading-relaxed">
             Leading the charge in technical training, empowering minds with practical computing knowledge and leading Artificial Intelligence curriculum.
           </p>
-          <div className="flex space-x-4 pt-2">
-            <a href="#" className="p-2 bg-white/5 hover:bg-white/10 rounded group transition-all text-gray-400 hover:text-white">
-              <Linkedin size={16} />
+          <div className="flex flex-wrap gap-2 pt-2">
+            <a 
+              href="https://wa.me/2348062244744" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2 bg-white/5 hover:bg-[#25D366]/20 rounded group transition-all text-gray-400 hover:text-[#25D366]"
+              title="Speak on WhatsApp"
+            >
+              <MessageSquare size={16} />
             </a>
-            <a href="#" className="p-2 bg-white/5 hover:bg-white/10 rounded group transition-all text-gray-400 hover:text-white">
-              <Github size={16} />
+            <a 
+              href="https://facebook.com/ApostlePaulAcademy" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2 bg-white/5 hover:bg-[#1877F2]/20 rounded group transition-all text-gray-400 hover:text-[#1877F2]"
+              title="Admissions Facebook Group"
+            >
+              <Facebook size={16} />
             </a>
-            <a href="#" className="p-2 bg-white/5 hover:bg-white/10 rounded group transition-all text-gray-400 hover:text-white">
-              <Twitter size={16} />
+            <a 
+              href="https://instagram.com/ApostlePaulAcademy" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2 bg-white/5 hover:bg-pink-500/20 rounded group transition-all text-gray-400 hover:text-pink-500"
+              title="Portfolio Instagram Chronicles"
+            >
+              <Instagram size={16} />
+            </a>
+            <a 
+              href="https://t.me/APA_HighTech_Channel" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2 bg-white/5 hover:bg-[#0088cc]/20 rounded group transition-all text-gray-400 hover:text-[#0088cc]"
+              title="Admissions Telegram Group"
+            >
+              <Send size={16} />
+            </a>
+            <a 
+              href="https://tiktok.com/@ApostlePaulAcademy" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="p-2 bg-white/5 hover:bg-white/20 rounded group transition-all text-gray-400 hover:text-white"
+              title="Creative TikTok Workspace"
+            >
+              <Music size={16} />
             </a>
           </div>
         </div>
@@ -104,7 +140,7 @@ export default function Footer({ setCurrentTab, onOpenEnrollModal }: FooterProps
           <div className="space-y-4 font-body text-xs sm:text-sm text-gray-400">
             <div className="flex items-start gap-2.5">
               <MapPin size={16} className="text-tertiary-container shrink-0 mt-0.5" />
-              <span>Apostle Paul High-Tech Boulevard, Science Ingress Center, Block AP-4</span>
+              <span>Adebowale, Ondo Road, Akure, Ondo State, Nigeria</span>
             </div>
             <div className="flex items-center gap-2.5">
               <Mail size={16} className="text-tertiary-container shrink-0" />
@@ -112,7 +148,7 @@ export default function Footer({ setCurrentTab, onOpenEnrollModal }: FooterProps
             </div>
             <div className="flex items-center gap-2.5">
               <Phone size={16} className="text-tertiary-container shrink-0" />
-              <span>+1 (555) ICT-ALGO_APA</span>
+              <span>+234 806 224 4744</span>
             </div>
           </div>
         </div>

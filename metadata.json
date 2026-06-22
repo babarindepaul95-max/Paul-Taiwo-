@@ -1,6 +1,6 @@
 {
   "name": "Apostle Paul Academy",
   "description": "An academy landing page and interactive AI study hub promoting excellence in Information and Communication Technology (ICT) and Artificial Intelligence (AI).",
-  "requestFramePermissions": [],
+  "requestFramePermissions": ["microphone"],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

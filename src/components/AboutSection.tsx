@@ -7,19 +7,19 @@ export default function AboutSection() {
       name: "Pastor Paul Babarinde",
       role: "Dean of Academic Excellence",
       bio: "An industrial ICT architect with decades of experience steering software training systems globally. Pastor Paul coordinates the core tech syllabus at Apostle Paul Academy, bridging fundamental computer science with leading edge multi-layer integrations.",
-      img: "/src/assets/images/pastor_paul_1781814750915.jpg"
+      img: "/src/assets/images/pastor_paul_wine_suit_1782155821396.jpg"
     },
     {
-      name: "Elena Vasquez",
+      name: "Chioma Adebayo",
       role: "Lead Designer & HCI Advisor",
-      bio: "An expert UI/UX developer specialized in spatial computing and cognitive layouts. Formerly a senior designer at visual design capitals in Zurich. Elena leads our human-computer interaction lab.",
-      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300"
+      bio: "An expert UI/UX developer specialized in spatial computing and cognitive layouts. Formerly a senior designer at visual design capitals in Lagos. Chioma leads our human-computer interaction lab.",
+      img: "/src/assets/images/chioma_adebayo_1782151401642.jpg"
     },
     {
-      name: "Dr. Marcus Thorne",
+      name: "Dr. Kwame Boateng",
       role: "Director of Software Engineering",
-      bio: "A researcher with focus on server security and secure API conduits. Dr. Marcus teaches state managers, lazy initialization structures, and Express routing setups to prevent clients from exposing secret keys.",
-      img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300"
+      bio: "A research veteran with focus on server security and secure API conduits. Dr. Kwame teaches advanced state management, lazy initialization filters, and Express proxying structures.",
+      img: "/src/assets/images/kwame_boateng_1782151416433.jpg"
     }
   ];
 

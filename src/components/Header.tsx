@@ -22,38 +22,40 @@ export default function Header({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const tabs = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
+    { id: "home", label: "Home Page" },
+    { id: "services", label: "Services" },
     { id: "courses", label: "Courses" },
     { id: "aicenter", label: "AI Center" },
     { id: "portfolio", label: "Portfolio" },
-    { id: "blog", label: "Blog" }
+    { id: "blog", label: "Blog" },
+    { id: "career", label: "Career Page" },
+    { id: "about", label: "About" }
   ];
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
-      <nav className="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+      <nav className="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 h-20">
         {/* Logo and Brand */}
         <div 
           onClick={() => setCurrentTab("home")}
-          className="font-display text-lg sm:text-xl font-bold text-primary flex items-center gap-2 cursor-pointer select-none"
+          className="font-display text-base sm:text-lg font-bold text-primary flex items-center gap-2 cursor-pointer select-none shrink-0"
         >
-          <div className="bg-primary text-tertiary p-2 rounded">
-            <Terminal size={20} strokeWidth={2.5} className="text-tertiary-container" />
+          <div className="bg-primary text-tertiary p-1.5 sm:p-2 rounded">
+            <Terminal size={18} strokeWidth={2.5} className="text-tertiary-container" />
           </div>
           <div className="flex flex-col">
             <span className="leading-none tracking-tight">Apostle Paul Academy</span>
-            <span className="text-[10px] text-tertiary-container font-mono tracking-wider uppercase mt-0.5">ICT & AI Excellence</span>
+            <span className="text-[9px] sm:text-[10px] text-tertiary-container font-mono tracking-wider uppercase mt-0.5">ICT & AI Excellence</span>
           </div>
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden xl:flex items-center space-x-4">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setCurrentTab(tab.id)}
-              className={`font-body text-sm font-medium transition-colors duration-200 py-1.5 border-b-2 ${
+              className={`font-body text-xs lg:text-sm font-medium transition-colors duration-200 py-1.5 border-b-2 ${
                 currentTab === tab.id
                   ? "text-primary border-primary font-semibold"
                   : "text-secondary border-transparent hover:text-primary hover:border-gray-200"
@@ -102,7 +104,7 @@ export default function Header({
           {/* Mobile Menu Trigger */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2.5 rounded-full hover:bg-gray-50 text-secondary hover:text-primary transition-all md:hidden"
+            className="p-2.5 rounded-full hover:bg-gray-50 text-secondary hover:text-primary transition-all xl:hidden"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -112,7 +114,7 @@ export default function Header({
 
       {/* Mobile Dynamic Navigation Overlay */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white shadow-lg absolute top-20 left-0 w-full animate-fadeIn z-40">
+        <div className="xl:hidden border-t border-gray-100 bg-white shadow-lg absolute top-20 left-0 w-full animate-fadeIn z-40">
           <div className="flex flex-col p-6 space-y-4">
             {tabs.map((tab) => (
               <button

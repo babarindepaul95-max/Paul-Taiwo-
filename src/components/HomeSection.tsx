@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { ArrowRight, Sparkles, ShoppingCart, Info, BookOpen, Star, HelpCircle, GraduationCap } from "lucide-react";
 import { Course, StudentProject } from "../types";
 import { COURSES, TESTIMONIALS, STUDENT_PROJECTS } from "../data";
+import TechGallery from "./TechGallery";
+import RoomBooking from "./RoomBooking";
+import SocialContact from "./SocialContact";
 
 interface HomeSectionProps {
   setCurrentTab: (tab: string) => void;
@@ -309,6 +312,90 @@ export default function HomeSection({
           </div>
         </div>
       </section>
+
+      {/* Founder and Executive Dean Profile Section with Self-Pic */}
+      <section className="max-w-7xl mx-auto px-6 py-8">
+        <div className="bg-gradient-to-r from-gray-50 via-white to-gray-50 rounded-2xl border border-gray-150 p-8 sm:p-12 shadow-sm">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Visual Anchor Left: Self Pic */}
+            <div className="lg:col-span-5 flex justify-center">
+              <div className="relative group max-w-sm w-full">
+                <div className="absolute -inset-1.5 bg-gradient-to-r from-primary to-tertiary-container rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                <div className="relative bg-white p-3 rounded-2xl border border-gray-100 shadow-md">
+                  <div className="aspect-[4/5] overflow-hidden rounded-xl bg-gray-100 relative">
+                    <img 
+                      src="/src/assets/images/pastor_paul_wine_suit_1782155821396.jpg" 
+                      alt="Pastor Paul Babarinde" 
+                      className="w-full h-full object-cover object-top filter contrast-[1.02] hover:scale-102 transition duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute top-4 left-4 bg-primary text-white font-mono text-[10px] font-bold tracking-widest px-2.5 py-1 rounded">
+                      FOUNDER & DEAN
+                    </div>
+                  </div>
+                  <div className="pt-4 text-center">
+                    <h3 className="font-display font-extrabold text-primary text-lg sm:text-xl">Pastor Paul Babarinde</h3>
+                    <p className="font-body text-xs text-tertiary-container font-mono tracking-wider font-bold mt-1 uppercase">Apostle Paul Academy Executive</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Strategic Text Right: Bios & Corporate Contact details */}
+            <div className="lg:col-span-7 space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/5 text-primary font-mono text-xs font-bold rounded-full border border-primary/10">
+                <span>Academic Leadership Profile</span>
+              </div>
+              
+              <h2 className="font-display text-3xl sm:text-4xl text-primary font-extrabold leading-tight tracking-tight">
+                Integrity in Technical Leadership: A Greeting from Pastor Paul
+              </h2>
+              
+              <p className="font-body text-secondary text-sm sm:text-base leading-relaxed">
+                Welcome to Apostle Paul Academy. We live in a generational epoch where digital literacy, software architecture design, and artificial intelligence configurations represent the primary engines of human breakthrough. 
+              </p>
+              
+              <p className="font-body text-secondary text-sm sm:text-base leading-relaxed">
+                As founder, my ultimate aspiration is to train a disciplined tech workforce that pairs robust practical engineering with high moral standards of business integrity. We ensure that our students build real-world systems, safeguard secret API keys, and avoid the shallow shortcuts of modern "AI Slop."
+              </p>
+
+              {/* Verified Contact and Corporation Ingress */}
+              <div className="pt-6 border-t border-gray-100 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="space-y-1">
+                  <span className="block text-[10px] text-gray-400 font-mono font-bold uppercase tracking-wider">Dean Email Address</span>
+                  <a href="mailto:babarindepaul95@gmail.com" className="font-display font-bold text-sm text-primary hover:text-tertiary-container transition-colors">babarindepaul95@gmail.com</a>
+                </div>
+
+                <div className="space-y-1">
+                  <span className="block text-[10px] text-gray-400 font-mono font-bold uppercase tracking-wider">Direct WhatsApp / Hotline</span>
+                  <a href="https://wa.me/2348062244744" className="font-display font-bold text-sm text-primary hover:text-tertiary-container transition-colors">+234 806 224 4744</a>
+                </div>
+
+                <div className="space-y-1">
+                  <span className="block text-[10px] text-gray-400 font-mono font-bold uppercase tracking-wider">HQ Ingress Address</span>
+                  <span className="font-display text-xs text-primary font-bold">Adebowale, Ondo Road, Akure, Ondo State, Nigeria</span>
+                </div>
+
+                <div className="space-y-1">
+                  <span className="block text-[10px] text-gray-400 font-mono font-bold uppercase tracking-wider">Corporate Focus</span>
+                  <span className="font-display text-xs text-primary font-bold">ICT Training Modules, Custom AI Integrations & Consulting</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Campus Photo Gallery */}
+      <TechGallery />
+
+      {/* Interactive Room Booking System */}
+      <RoomBooking />
+
+      {/* Social Contact Details Hub */}
+      <SocialContact />
 
       {/* Featured Student Portfolios */}
       <section className="max-w-7xl mx-auto px-6">
